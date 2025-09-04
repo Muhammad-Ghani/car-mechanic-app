@@ -1,0 +1,242 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 40px;
+    background-color: black;
+    align-items: center;
+    top: 0;
+
+}
+
+.logo {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #fff;
+    text-decoration: none;
+
+}
+
+.logo img {
+    height: 100px;
+    vertical-align: middle;
+}
+
+.navbar .nav-links {
+    list-style: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+}
+
+.navbar .nav-links li {
+    margin-left: 20px;
+}
+
+.navbar .nav-links a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 1rem;
+    transition: color 0.3s ease;
+}
+
+.nav-links a:hover {
+    color: rgb(220, 140, 35);
+}
+
+.menu-icon {
+    display: none;
+    font-size: 1.5rem;
+    color: #fff;
+    cursor: pointer;
+}
+
+/* sect 1 */
+.container-headr {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px;
+    color: #a8a8a8a4;
+    background-color: black;
+}
+
+.text-section {
+    flex: 1;
+
+    text-align: center;
+}
+
+.text-section h1 {
+    color: orange;
+    padding-bottom: 20px;
+}
+
+.image-section {
+    flex: 1;
+    text-align: right;
+    flex-wrap: wrap;
+}
+
+.image-section img {
+    max-width: 100%;
+    height: auto;
+}
+
+/* ------------------------------------------------- */
+#cars {
+    background: black;
+}
+
+.car-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+
+    gap: 20px;
+    padding: 20px;
+}
+
+.car-card {
+    background: transparent;
+    border-radius: 10px;
+    padding: 20px;
+    text-align: center;
+}
+
+.car-card p {
+    font-size: 1rem;
+    color: #a8a8a8a4;
+}
+
+.car-card h4 {
+    font-size: 1.2rem;
+    margin-top: 15px;
+    color: rgba(206, 142, 21, 0.808);
+    padding-bottom: 20px;
+}
+
+.ha-button {
+    padding: 5px 10px;
+    background: rgb(212, 123, 8);
+    color: #fff;
+    border: none;
+    margin-top: 20px;
+    border-radius: 5px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: 0.3s ease;
+}
+
+.ha-button:hover {
+    color: orange;
+    background-color: aliceblue;
+}
+
+/* footer */
+.footer {
+
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+    background-color: black;
+    color: #fff;
+}
+
+.footer-column {
+    display: flex;
+    flex-direction: column;
+}
+
+.footer-links {
+    list-style: none;
+    padding: 5px;
+    justify-content: space-between;
+}
+
+.footer-links a {
+    color: #fff;
+    text-decoration: none;
+    margin-bottom: 10px;
+    transition: color 0.3s ease;
+
+}
+
+.footer-links a:hover {
+    color: orange;
+}
+
+.login-portal {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+
+}
+
+.text-f {
+    margin-bottom: 10px;
+    background-color: black;
+    color: #fff;
+}
+
+.password-f {
+    background-color: black;
+    color: #fff;
+}
+
+.login-portal button {
+    padding: 5px;
+    margin-bottom: 10px;
+    margin-top: 10px;
+    transition: 0.3s ease;
+}
+
+.login-portal button:hover {
+    background-color: orange;
+    color: #fff;
+}
+
+@media (max-width: 768px) {
+    .navbar .nav-links {
+        display: none;
+        flex-direction: column;
+        width: 100%;
+        background: black;
+        position: absolute;
+        top: 100px;
+        left: 0;
+        padding: 10px 0;
+    }
+
+    .nav-links:hover {
+        color: orange;
+    }
+
+    .navbar .nav-links.active {
+        display: flex;
+    }
+
+    .navbar .nav-links li {
+        margin: 10px 0;
+        text-align: center;
+    }
+
+    .navbar .menu-icon {
+        display: block;
+    }
+
+    .container-headr {
+        flex-wrap: wrap;
+        flex-direction: column;
+    }
+
+    .footer {
+        flex-wrap: wrap;
+        flex-direction: column;
+    }
+}
